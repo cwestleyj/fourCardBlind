@@ -5,12 +5,64 @@
    ========================================================================== */
 
 
+.customNav {
+    padding:15px;
+}
+
+
+body, html {
+    height: 100%;
+}
+.bg-splash {
+    /* The image used */
+    background-image: url("../img/magicCardsBundle.jpg");
+
+    /* Full height */
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    align-items: center;
+
+}
+
+.fill
+{
+    background-color: black;
+    opacity: 65%;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-splash h1 {
+    color:white;
+    opacity: 100%;
+    font-size:5em;
+}
+
+.asideSplash {
+    color:purple;
+    font-size: 2em;
+
+
+}
 
 
 
 
+.sectionWhat{
+    background: green;}
 
+.sectionWhy{
+    background: yellow;
+}
 
+.sectionHow{
+    background-color: blue;}
 
 
 
