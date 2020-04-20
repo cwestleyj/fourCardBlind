@@ -9,14 +9,15 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&family=Fira+Sans:wght@200&family=Martel+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css">
 
 </head>
 <body>
-<nav class="nav navbar-inverse customNav">
+<nav class="nav navbar-styled customNav">
     <a class="navbar-brand" href="#">
-        <img src="/img/Magic-The-Gathering-logo-800x279.png" class="d-inline-block align-top" alt="">
+        <img src="img/cardGameLogo.png" class="d-inline-block align-top logoFix" width="30" height="30" alt="">
         Four Card Blind
     </a>
     <a class="nav-link active" href="index.html">Home</a>
@@ -28,7 +29,7 @@
 <div class="bg-splash text-justify">
 
     <div class="fill">
-        <div class="row">
+        <div class="fillFix row">
             <div class="col-md-2 text-justify">
                 <h1> Four Card Blind</h1>
             </div>
@@ -45,23 +46,62 @@
 
 <section class="container-fluid sectionWhat">
     <h1>What is Four Card Blind?</h1>
-    <div><p>Four Card Blind is a format in Magic the Gathering where players submit a decklist based on only using four cards. Once your deck is approved by the site admins you are then placed in a bracket style tournament against 8-16 players. Each deck is reviewed by an official Magic the Gathering judge to determine the winning outcome, which usually takes about 2-3 days to evaluate.      </p></div>
+    <hr>
+    <div><p>Four Card Blind is a format in Magic the Gathering where players submit a decklist based on only using four
+        cards. Once your deck is approved by the site admins you are then placed in a round robin style tournament
+        against 8-16 players. Each deck is reviewed by an official Magic the Gathering judge to determine the winning
+        outcome, which usually takes about 2-3 days to evaluate. The standard rules of magic are used, except players do
+        not lose the game for the first card drawn during a player's draw step when there are zero cards in that
+        player's deck. Once the round has been fully resolved, the deck with the most points is victorious, earning its
+        submitter hearty congratulations and each nonbasic card it used a ban in all future rounds.
+    </p></div>
+</section>
+<hr>
+
+
+<section class="sectionWhy">
+    <div class="container-fluid col-md-12">
+        <h1>Example Deck pairing </h1>
+        <div class="imgGallery">
+            <img src="img/ancestralRecall.jpg" title="Ancestral Recall"
+                 alt="Ancestral Recall. 1 blue mana. Instant. Target player draws three cards. ">
+            <img src="img/DisruptingShoal.jpg" title="Disrupting Shoal"
+                 alt="Disrupting Shoal. X mana plus 2 blue mana. Instant - Arcane. You may exile a blue card with converted mana cost X from your hand rather than pay this spell's mana cost. Counter target spell if its converted mana cost is X.">
+            <img src="img/sphinxOfTheFinalWord.jpg" title="Spinx of the Final Word"
+                 alt="Spinx of the Final Word. 5 any mana plus 2 blue mana. Creature - Sphinx. Sphinx of the Final Word cant be counterted. Flying, hexproof. Instant and sorcery spells you control cant be countered by spells or abilities.">
+            <img src="img/saprazzanCove.jpg" title="Saprazzan Cove"
+                 alt="Saprazzan Cove. Land. Saprazzan Cove comes into play tapped. Tap - instant speed : Put a storage counter on Saprazzan Cove. Tap - sorcery speed: remove any number of storage counters from Saprazzan Cove: Add one blue mana to your mana pool for each storage counter removed this way. ">
+        </div>
+        <h1 class="bold1 text-center">Fair Ancestral Deck </h1>
+        <h1 class="bold1 text-center">VS </h1>
+        <h1 class="bold1 text-center">Karakas Silence</h1>
+
+        <div class="imgGallery">
+
+            <img src="img/blackLotus.jpg" title="Black Lotus"
+                 alt="Ancestral Recall. 1 blue mana. Instant. Target player draws three cards. ">
+            <img src="img/silence.jpg" title="Silence"
+                 alt="Disrupting Shoal. X mana plus 2 blue mana. Instant - Arcane. You may exile a blue card with converted mana cost X from your hand rather than pay this spell's mana cost. Counter target spell if its converted mana cost is X.">
+            <img src="img/nissaVoiceOfZendikar.jpg" title="Nissa, Voice of Zendikar"
+                 alt="Spinx of the Final Word. 5 any mana plus 2 blue mana. Creature - Sphinx. Sphinx of the Final Word cant be counterted. Flying, hexproof. Instant and sorcery spells you control cant be countered by spells or abilities.">
+            <img src="img/Karakas.jpg" title="Karakas"
+                 alt="">
+        </div>
+
+        <p> In this matchup you can see that each player has a basic 'engine' consisting of mana sources, spells, and creatures. Each type does some stuff and faces off against each other! In this round, the Karakas silence deck would win in this pairing, since it's cards cancel out the fair ancestral deck.  </p>
+        </div>
+    </div>
 </section>
 
-<section class="container-fluid sectionWhy">
-    <h1>Example Deck pairing </h1>
-    <div><p>copypasta</p></div>
-</section>
-
-<section class="container-fluid sectionHow">
-    <h1>Section 1.</h1>
-    <div><p>copypasta</p></div>
+<section class=" container-fluid sectionHow">
+            <h1>How to sign up?</h1>
+            <div><p>First, read the <a href="faq.html" target="_blank">rules.</a>  Four card blind is a limited set with it's own rules to play so it's important to understand how the format works before beginning. </p></div>
 </section>
 
 <footer>
-    <p>&copy; Company 2015</p>
+    <p>Company 2020</p>
 </footer>
-</div> <!-- /container -->
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 

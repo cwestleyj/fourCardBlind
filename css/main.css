@@ -3,12 +3,49 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.colorScheme {
+    color:#8A2831;
+    color:#D8353A;
+    color:#EB9448;
+    color:#F1FAE4;
+    color:#749B81;
+}
 
+.fonts {
+    font-family: 'Corben', cursive;
+    font-family: 'Martel Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+}
 
 .customNav {
     padding:15px;
 }
+.navbar-styled .logoFix a{
+    border:0 !important;
+    display:none;
 
+}
+.navbar-styled {
+    padding:1em;
+    color: black;
+    background-image: url("../img/triangle-mosaic.png");
+}
+
+.navbar-styled a {
+    color: black;
+}
+
+.navbar-styled a:active {
+    border-bottom: #0f0f0f 3px solid;
+}
+
+.navbar-styled a:hover {
+    border-bottom: #EB9448 4px solid;
+
+}
+.active {
+    border-bottom: 4px solid black;
+}
 
 body, html {
     height: 100%;
@@ -17,14 +54,17 @@ body, html {
     /* The image used */
     background-image: url("../img/magicCardsBundle.jpg");
 
-    /* Full height */
-
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     align-items: center;
+    height:50%;
+}
+/*kenobi u are a */
+.bold1 {
+    font-size: 2em;
 
 }
 
@@ -38,6 +78,20 @@ body, html {
     background-size: cover;
 }
 
+.fillFix *
+{opacity: 100%!important;}
+
+
+.fillNav .navbar-styled
+{
+    background-image: url("../img/triangle-mosaic.png");
+    /*opacity: 65%;*/
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .bg-splash h1 {
     color:white;
     opacity: 100%;
@@ -45,24 +99,36 @@ body, html {
 }
 
 .asideSplash {
+    opacity: 100% !important;
     color:purple;
     font-size: 2em;
+}
 
+.section* {
+    padding-bottom:0;
+    width:100%;
+}
+.imgGallery {
+    display: flex;
+}
+.imgGallery img{
+    height:100%;
+    width:200px;
+    padding:1em;
+    display: flex;
+    justify-content: space-evenly;
 
 }
 
-
-
-
 .sectionWhat{
-    background: green;}
+   }
 
 .sectionWhy{
-    background: yellow;
+
 }
 
 .sectionHow{
-    background-color: blue;}
+   }
 
 
 
