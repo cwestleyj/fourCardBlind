@@ -7,11 +7,13 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Corben&family=Fira+Sans:wght@200&family=Martel+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&family=Fira+Sans:wght@200&family=Martel+Sans&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
 
 </head>
 <body>
@@ -26,85 +28,74 @@
     <a class="nav-link" href="signup.html">Sign Up</a>
     <a class="nav-link" href="contact.html">Contact</a>
 </nav>
-<div class="bg-splash text-justify">
 
-    <div class="fill">
-        <div class="fillFix row">
-            <div class="col-md-2 text-justify">
-                <h1> Four Card Blind</h1>
-            </div>
-            <div class="col-md-10 asideSplash ">
-                <h2> Welcome to the premier site for Four Card Blind.</h2>
-                <p class="text-center">The only place to play Magic the Gathering's latest format</p>
-                <button class="btn-primary text-justify"> Learn More</button>
-            </div>
+
+<div class="container-fluid signUpBkg">
+    <div class="row">
+        <div class="container signUp col-md-4 col-sm-12">
+            <form>
+                <div class="form-group">
+                    <h1> Sign In </h1>
+                    <label for="inputEmail">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                           placeholder="Enter email">
+
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn ">Submit</button>
+            </form>
         </div>
+        <div class="container signUp col-md-6 col-sm-12">
+            <form  class="needs-validation" novalidate action="">
+                <div class="form-group">
+                    <h1> Create an account </h1>
+                    <label for="validateEmail">Email address</label>
+                    <input type="email" class="form-control inputs" id="validateEmail" aria-describedby="emailHelp"
+                           placeholder="Enter email" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
 
+                <div class="form-group">
+                    <label for="validatePassword">Password</label>
+                    <input type="text" class="form-control" id="validatePassword" placeholder="Password" required>
+                    <div class="invalid-feedback">
+                        Please input a password.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="text" class="form-control" id="confirmPassword" placeholder="Password" required>
+                    <div class="invalid-feedback">
+                        Please confirm your password.
+                    </div>
+                </div>
+
+                <div class="form-check mb-2 mr-sm-2">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck" required>
+                    <label class="form-check-label" for="inlineFormCheck">
+                        I have read the <a href="rules.html">rules</a> for Four Card Blind.
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
     </div>
 </div>
 
 
-<section class="container-fluid sectionWhat">
-    <h1>What is Four Card Blind?</h1>
-    <hr>
-    <div><p>Four Card Blind is a format in Magic the Gathering where players submit a decklist based on only using four
-        cards. Once your deck is approved by the site admins you are then placed in a round robin style tournament
-        against 8-16 players. Each deck is reviewed by an official Magic the Gathering judge to determine the winning
-        outcome, which usually takes about 2-3 days to evaluate. The standard rules of magic are used, except players do
-        not lose the game for the first card drawn during a player's draw step when there are zero cards in that
-        player's deck. Once the round has been fully resolved, the deck with the most points is victorious, earning its
-        submitter hearty congratulations and each nonbasic card it used a ban in all future rounds.
-    </p></div>
-</section>
-<hr>
-
-
-<section class="sectionWhy">
-    <div class="container-fluid col-md-12">
-        <h1>Example Deck pairing </h1>
-        <div class="imgGallery">
-            <img src="img/ancestralRecall.jpg" title="Ancestral Recall"
-                 alt="Ancestral Recall. 1 blue mana. Instant. Target player draws three cards. ">
-            <img src="img/DisruptingShoal.jpg" title="Disrupting Shoal"
-                 alt="Disrupting Shoal. X mana plus 2 blue mana. Instant - Arcane. You may exile a blue card with converted mana cost X from your hand rather than pay this spell's mana cost. Counter target spell if its converted mana cost is X.">
-            <img src="img/sphinxOfTheFinalWord.jpg" title="Spinx of the Final Word"
-                 alt="Spinx of the Final Word. 5 any mana plus 2 blue mana. Creature - Sphinx. Sphinx of the Final Word cant be counterted. Flying, hexproof. Instant and sorcery spells you control cant be countered by spells or abilities.">
-            <img src="img/saprazzanCove.jpg" title="Saprazzan Cove"
-                 alt="Saprazzan Cove. Land. Saprazzan Cove comes into play tapped. Tap - instant speed : Put a storage counter on Saprazzan Cove. Tap - sorcery speed: remove any number of storage counters from Saprazzan Cove: Add one blue mana to your mana pool for each storage counter removed this way. ">
-        </div>
-        <h1 class="bold1 text-center">Fair Ancestral Deck </h1>
-        <h1 class="bold1 text-center">VS </h1>
-        <h1 class="bold1 text-center">Karakas Silence</h1>
-
-        <div class="imgGallery">
-
-            <img src="img/blackLotus.jpg" title="Black Lotus"
-                 alt="Ancestral Recall. 1 blue mana. Instant. Target player draws three cards. ">
-            <img src="img/silence.jpg" title="Silence"
-                 alt="Disrupting Shoal. X mana plus 2 blue mana. Instant - Arcane. You may exile a blue card with converted mana cost X from your hand rather than pay this spell's mana cost. Counter target spell if its converted mana cost is X.">
-            <img src="img/nissaVoiceOfZendikar.jpg" title="Nissa, Voice of Zendikar"
-                 alt="Spinx of the Final Word. 5 any mana plus 2 blue mana. Creature - Sphinx. Sphinx of the Final Word cant be counterted. Flying, hexproof. Instant and sorcery spells you control cant be countered by spells or abilities.">
-            <img src="img/Karakas.jpg" title="Karakas"
-                 alt="">
-        </div>
-
-        <p> In this matchup you can see that each player has a basic 'engine' consisting of mana sources, spells, and creatures. Each type does some stuff and faces off against each other! In this round, the Karakas silence deck would win in this pairing, since it's cards cancel out the fair ancestral deck.  </p>
-        </div>
-    </div>
-</section>
-
-<section class=" container-fluid sectionHow">
-            <h1>How to sign up?</h1>
-            <div><p>First, read the <a href="faq.html" target="_blank">rules.</a>  Four card blind is a limited set with it's own rules to play so it's important to understand how the format works before beginning. </p></div>
-</section>
-
-<footer>
-    <p>Company 2020</p>
-</footer>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 
 <script src="js/main.js"></script>

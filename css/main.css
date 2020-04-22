@@ -1,14 +1,33 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 .colorScheme {
-    color:#8A2831;
-    color:#D8353A;
-    color:#EB9448;
-    color:#F1FAE4;
-    color:#749B81;
+    color: #25A6D9;
+    color: #36A6BF;
+    color: #D7D9C7;
+    color: #A68776;
+    color: #401201;
+}
+
+h1 {
+    font-family: Fira Sans, cursive;
+    font-size:1.5em;
+    margin-bottom:10px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+h2 {
+    font-family:  Martel Sans, sans-serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+
+}
+
+section {
+    padding:1.5em;
 }
 
 .fonts {
@@ -17,16 +36,18 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
-.customNav {
-    padding:15px;
-}
-.navbar-styled .logoFix a{
-    border:0 !important;
-    display:none;
+
+.navbar-styled .logoFix a {
+    border: 0 !important;
+    display: none;
 
 }
+
 .navbar-styled {
-    padding:1em;
+    padding: 0.8em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     color: black;
     background-image: url("../img/triangle-mosaic.png");
 }
@@ -36,20 +57,19 @@
 }
 
 .navbar-styled a:active {
-    border-bottom: #0f0f0f 3px solid;
+    border-bottom:  #36A6BF 3px solid;
 }
 
 .navbar-styled a:hover {
     border-bottom: #EB9448 4px solid;
 
 }
+
 .active {
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid #36A6BF;
 }
 
-body, html {
-    height: 100%;
-}
+
 .bg-splash {
     /* The image used */
     background-image: url("../img/magicCardsBundle.jpg");
@@ -60,81 +80,160 @@ body, html {
     background-size: cover;
 
     align-items: center;
-    height:50%;
+    height: 50%;
 }
+
 /*kenobi u are a */
 .bold1 {
     font-size: 2em;
 
 }
 
-.fill
-{
+.fill {
     background-color: black;
     opacity: 65%;
-    height:100%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.fillFix *
-{opacity: 100%!important;}
+.fillFix * {
+    opacity: 100% !important;
+}
 
 
-.fillNav .navbar-styled
-{
+.fillNav .navbar-styled {
     background-image: url("../img/triangle-mosaic.png");
     /*opacity: 65%;*/
-    height:100%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bg-splash h1 {
-    color:white;
+    color: white;
     opacity: 100%;
-    font-size:5em;
+    font-size: 5em;
 }
 
 .asideSplash {
     opacity: 100% !important;
-    color:purple;
+    color: purple;
     font-size: 2em;
 }
 
-.section* {
-    padding-bottom:0;
-    width:100%;
+.section * {
+    padding-bottom: 0;
+    width: 100%;
 }
+
 .imgGallery {
     display: flex;
 }
-.imgGallery img{
-    height:100%;
-    width:200px;
-    padding:1em;
+
+
+
+.imgGallery img {
+    height: 100%;
+    width: 200px;
+    padding: 1em;
     display: flex;
     justify-content: space-evenly;
+    cursor:pointer;
+}
+.hoverZoom {
+    transition: transform 600ms ease-in-out;
+    /*transform-origin: right top;*/
+}
+
+.hoverZoom:hover {
+    transform: scale(1.4);
+}
+
+
+
+.sectionWhat {
+}
+
+.sectionWhy {
 
 }
 
-.sectionWhat{
-   }
+.sectionHow {
+}
 
-.sectionWhy{
+
+/*signup styling*/
+
+.signUp {
+    margin: 30px 0px 0 20px;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px black solid;
+    justify-content: center;
+    background-color: whitesmoke;
+
+}
+.signUp h1{
+    padding:10px;
+}
+
+.signUpBkg {
+    background: url("../img/gallia-endless-dance_thb_1280x960_wallpaper.jpg") no-repeat center center fixed;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
 }
 
-.sectionHow{
-   }
 
 
+.signUp button {
+    margin: 20px 0 20px 0;
+    background-color: #EB9448 !important;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color: #EB9448;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signUp .inputs {
+    margin: 5px;
+    max-width: 85%;
+    border-radius:3px;
+}
+
+@media screen and (max-width: 360px) {
+    .signUp {
+        margin: 30px 10px 20px 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        padding: 0.3em;
+        border-radius: 5px;
+        border: 1px black solid;
+
+    }
 
 
+    .signUpBkg {
+        height:100%;
+    }
 
 
-
-
+}
 
