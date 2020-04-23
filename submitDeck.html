@@ -11,9 +11,8 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Corben&family=Fira+Sans:wght@200&family=Martel+Sans&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="css/reset.css">
 
 </head>
 <body>
@@ -39,10 +38,10 @@
             <li class="nav-item ">
                 <a class="nav-link " href="rules.html">Rules</a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link " href="signup.html">Sign Up</a>
-            </li>
             <li class="nav-item">
+                <a class="nav-link" href="signup.html">Sign Up</a>
+            </li>
+            <li class="nav-item active">
                 <a class="nav-link" href="submitDeck.html">Submit your deck</a>
             </li>
         </ul>
@@ -104,36 +103,40 @@
                 <h1 class="splashH1"> FCB </h1>
             </div>
             <div class="col-md-10 text-center">
-                <h1 class="splashH1"> Sign Up</h1>
+                <h1 class="splashH1"> Submit your deck </h1>
             </div>
         </div>
     </div>
 </div>
+<div class="rulesBkg ">
 
-<div class="signUpBkg">
     <div class="container">
-        <div class="row">
-            <div class="signUp col-md-4 col-sm-8">
-                <form>
-                    <div class="form-group">
-                        <h1> Sign In </h1>
-                        <label for="inputEmail">Email address</label>
-                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
-                               placeholder="Enter email">
+        <h1 class="specialH1">Submit your deck</h1>
 
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword">Password</label>
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                        <a href="#">Forgot Password?</a>
-                    </div>
-                    <button type="submit" class="btn">Submit</button>
-                </form>
-            </div>
-            <div class="container signUp col-md-6 col-sm-8">
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-12 submitStyles">
                 <form class="needs-validation" novalidate action="">
+                    <h1> Submit your list </h1>
+
                     <div class="form-group">
-                        <h1> Create an account </h1>
+                        <label for="validateUsername">Username</label>
+                        <input type="email" class="form-control inputs" id="validateUsername" aria-describedby="emailHelp"
+                               placeholder="Enter email" required>
+                        <div class="invalid-feedback">
+                            Please enter your username.
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="validatePassword">Password</label>
+                        <input type="text" class="form-control" id="validatePassword" placeholder="Password" required>
+                        <div class="invalid-feedback">
+                            Please input your password.
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label for="validateEmail">Email address</label>
                         <input type="email" class="form-control inputs" id="validateEmail" aria-describedby="emailHelp"
                                placeholder="Enter email" required>
@@ -143,37 +146,85 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="validatePassword">Password</label>
-                        <input type="text" class="form-control" id="validatePassword" placeholder="Password" required>
+                        <label for="validateCard1">Card #1</label>
+                        <input type="text" class="form-control" id="validateCard1" placeholder="Card #2" required>
                         <div class="invalid-feedback">
-                            Please input a password.
+                            You must submit a card for slot #1.
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="text" class="form-control" id="confirmPassword" placeholder="Password" required>
+                        <label for="validateCard2">Card #2</label>
+                        <input type="text" class="form-control" id="validateCard2" placeholder="Card #3" required>
                         <div class="invalid-feedback">
-                            Please confirm your password.
+                            You must submit a card for slot #2.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="validateCard3">Card #3</label>
+                        <input type="text" class="form-control" id="validateCard3" placeholder="Card #3" required>
+                        <div class="invalid-feedback">
+                            You must submit a card for slot #3.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="validateCard4">Card #4</label>
+                        <input type="text" class="form-control" id="validateCard4" placeholder="Card #4" required>
+                        <div class="invalid-feedback">
+                            You must submit a card for slot #4.
                         </div>
                     </div>
 
                     <div class="form-check mb-2 mr-sm-2">
                         <input class="form-check-input" type="checkbox" id="inlineFormCheck" required>
                         <label class="form-check-label" for="inlineFormCheck">
-                            I have read the <a href="rules.html">rules</a> for Four Card Blind.
+                            I have read the <a href="rules.html">rules</a> for Four Card Blind and I have not submitted banned cards.
                         </label>
                         <div class="invalid-feedback">
                             You must agree before submitting.
                         </div>
                     </div>
 
+                    <div class="form-check mb-2 mr-sm-2">
+                        <input class="form-check-input" type="checkbox" optional>
+                        <label class="form-check-label" for="inlineFormCheck">
+                            Sign me up for our mailing list.<br> <span class="small">We will never send you spam. Only FCB news and tournament results.</span>
+
+                        </label>
+
+                    </div>
+
                     <button type="submit" class="btn">Submit</button>
                 </form>
             </div>
-        </div>
-    </div>
-</div>
+            <div class="col-md-4 col-sm-12">
 
+                <ul class="list-group">
+                    <h1 class="specialH1sm">Banned Cards</h1>
+                    <li class="list-group-item">Bitterblossom</li>
+                    <li class="list-group-item">Chancellor of the Annex</li>
+                    <li class="list-group-item">Ghost Quarter</li>
+                    <li class="list-group-item">Laboratory Maniac</li>
+                    <li class="list-group-item">Leyline of Anticipation</li>
+                    <li class="list-group-item">Leyline of Singularity</li>
+                    <li class="list-group-item">Mishra’s Workshop</li>
+                    <li class="list-group-item">Strip Mine</li>
+                    <li class="list-group-item">Wasteland</li>
+                    <li class="list-group-item">All ante cards</li>
+                    <li class="list-group-item">All Unglued/Unhinged cards</li>
+                    <li class="list-group-item">All dexterity-based cards (i.e., Chaos Orb)</li>
+                    <li class="list-group-item">Conspiracies</li>
+                    <li class="list-group-item">1996 World Champion</li>
+                    <li class="list-group-item">Splendid Genesis</li>
+                    <li class="list-group-item">Lapras</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
 
 <footer>
     <nav class="nav navbar-bottom navbar-styled">
@@ -191,7 +242,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
 
 <script src="js/main.js"></script>
 

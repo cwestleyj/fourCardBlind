@@ -12,6 +12,7 @@
     font-family: 'Corben', cursive;
     font-family: 'Martel Sans', sans-serif;
     font-family: "Open Sans", sans-serif;
+    font-family: "Fredoka One", sans-serif;
 }
 
 * {
@@ -20,6 +21,22 @@
     box-sizing: border-box;
 }
 /*headings and tags*/
+
+.splashH1 {
+    font-family: 'Martel Sans', cursive;    font-weight:bold;
+    font-size: 5em;
+    color:white;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+}
+
+.fill * {
+    margin-right:0 !important;
+    margin-left:0 !important;
+}
+
+.bg-splash {}
 h1 {
     font-family: Fira Sans, cursive;
     font-size:1.5em;
@@ -28,6 +45,9 @@ h1 {
     border-bottom: 2px solid black;
 }
 
+p *{
+    padding:0.5em;
+}
 .specialH1 {
     font-weight:bold;
     color:white;
@@ -41,13 +61,25 @@ h1 {
 
 }
 
+.specialH1sm {
+    font-weight:bold;
+    color:white;
+    font-size:1.5em;
+    font-family: Fira Sans, cursive;
+    padding:0.4em 0.8em;
+    background-color: #36A6BF;
+    width:100%;}
+
 .navbar-toggler{
     color:black;
     border:2px solid grey;
 }
 .container {
-    background-color:rgba(248,248,248,0.96);
-    padding:0 1em 0 1em;
+    background-color:rgba(248,248,248,0.93);
+    padding:0.5em 0em 0.5em 0em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
 
 }
 #accordion{
@@ -66,6 +98,10 @@ p {
 
 section {
     padding:1.5em;
+}
+
+article {
+    padding:0.5em;
 }
 
 .tac {margin-top: 0.5em;}
@@ -118,7 +154,7 @@ footer .navbar-styled a {
 
 .homeBkg {
     background: url("../img/so-white.png") no-repeat center center fixed;
-    height: 100%;
+    height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -163,11 +199,6 @@ footer .navbar-styled a {
     background-size: cover;
 }
 
-.bg-splash h1 {
-    color: white;
-    opacity: 100%;
-    font-size: 5em;
-}
 
 .asideSplash {
     opacity: 100% !important;
@@ -286,7 +317,7 @@ input[type=submit] {
 
 .rulesBkg {
     background: url("../img/pack-rat_sl2-rat_1280x960_wallpaper.jpg") no-repeat center center fixed;
-    height: 100%;
+    height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -294,26 +325,122 @@ input[type=submit] {
 }
 
 
+/*results styles*/
+.resultsBkg {
+    background: url("../img/Ajani-Strength-of-the-Pride_M20_1280x960.jpg") no-repeat center center fixed;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+/*submit styles*/
+.submitStyles{
+
+    margin: 0.3em 0px 0 0.3em;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px black solid;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+.submitStyles button {
+    margin: 20px 0 20px 0;
+    background-color: #EB9448 !important;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 
 
 
 
 
 /*media queries*/
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 770px) {
     .signUp {
-        margin: 30px 10px 20px 10px;
-        padding: 0.3em;
+        margin: 0;
+        padding: 1em;
         border-radius: 5px;
         border: 1px black solid;
 
     }
 
-
-    .signUpBkg {
-        height:100%;
+    .active {
+        border:none;
     }
 
+    nav {
+        font-size:1.5em;
+        padding: 15px 0 15px 0;
+    }
+    nav a {
+        margin: 0.8rem 0 0.8rem 0;
+        width:80vw;
+        padding:0 5px 0 5px;
+
+        }
+
+    button #dropdownMenu1 {
+        min-width: 1000px;
+        justify-content: center;
+    }
+    button#dropdownMenu1.btn.btn-styled {
+        color:black;
+        min-width:80vw;
+        margin: 0.8rem 0 0.8rem 0;
+
+
+    }
+
+    .splashH1 {
+        padding:0.1em;
+        text-align: center;
+        font-size:2em;
+    }
+
+    .specialH1 {
+        font-weight:bold;
+        color:white;
+        font-size:1.5em;
+        font-family: Fira Sans, cursive;
+        padding:0.2em 0.4em;
+        margin:0.1em 0 0.1em 0;
+        background-color: #36A6BF;
+        width:100%;
+    }
+
+    article {
+        padding:1em;
+    }
+    .card-header {
+        -moz-box-shadow:    inset 0 0 1px #000000;
+        -webkit-box-shadow: inset 0 0 1px #000000;
+        box-shadow:         inset 0 0 1px #000000;
+    }
+    button {
+        background-color:white !important;
+        -moz-box-shadow:    inset 0 0 2px #000000;
+        -webkit-box-shadow: inset 0 0 2px #000000;
+        box-shadow:         inset 0 0 2px #000000;
+    }
+
+    .list-group {
+        padding:1em;
+    }
+
+    form {
+        padding:2em;
+    }
+
+    .submitStyles
+    {
+        padding:2em;
+    }
 
 }
 
