@@ -4,7 +4,9 @@
   "description": "four card blind site for mtg",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compress": "compress.js",
+    "imagesize": "imgSize.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/cwestleyj/fourCardBlind/issues"
   },
-  "homepage": "https://github.com/cwestleyj/fourCardBlind#readme"
+  "homepage": "https://github.com/cwestl\n    \"compress-images\": \"^1.7.8\",eyj/fourCardBlind#readme",
+  "dependencies": {
+    "image-size": "^0.8.3"
+  },
+  "devDependencies": {
+    "imagemin": "^7.0.1"
+  }
 }

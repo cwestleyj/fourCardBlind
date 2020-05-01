@@ -225,6 +225,7 @@ footer .navbar-styled a {
     padding: 1em;
     cursor:pointer;
 }
+
 .hoverZoom {
     transition: transform 600ms ease-in-out;
     /*transform-origin: right top;*/
@@ -363,84 +364,153 @@ input[type=submit] {
 /*media queries*/
 @media screen and (max-width: 770px) {
     .signUp {
-        margin: 0;
+        margin: 3px;
         padding: 1em;
         border-radius: 5px;
         border: 1px black solid;
 
     }
 
-    .active {
-        border:none;
+
+    .imgGallery {
+        display: flex;
     }
 
-    nav {
-        font-size:1.5em;
-        padding: 15px 0 15px 0;
+    .imgGallery img {
+        flex-direction: column;
     }
-    nav a {
-        margin: 0.8rem 0 0.8rem 0;
-        width:80vw;
-        padding:0 5px 0 5px;
+
+        .hoverZoom {
+            transition: transform 600ms ease-in-out;
+            /*transform-origin: right top;*/
+        }
+
+        .hoverZoom:active {
+            transform: scale(1.4);
+        }
+
+        .hoverZoom:hover {
+            transform: scale(3);
+        }
+
+
+        .tac {
+            margin-top: 0.5em;
+            padding: 2em;
+            line-height: 1.2em;
+        }
+
+        .tac h2, h3 {
+            margin-bottom: 0.5em;
+        }
+
+        /*footer .navbar-styled {*/
+            /*justify-content: center;*/
+            /*position: relative;*/
+            /*bottom: 0;*/
+        /*}*/
+
+        .submitStyles {
+            margin: 0.1em 3px 0 3px;
+        }
+
+        .signUpBkg, .resultsBkg, .rulesBkg, .homeBkg {
+            height: 100%;
+        }
+
+        .row {
+            margin: 10px 0 10px 0;
+        }
+
+        .imgGallery img {
+            width: 100px;
+        }
+
+        .sectionWhy {
+            padding: 0.2em;
 
         }
 
-    button #dropdownMenu1 {
-        min-width: 1000px;
-        justify-content: center;
-    }
-    button#dropdownMenu1.btn.btn-styled {
-        color:black;
-        min-width:80vw;
-        margin: 0.8rem 0 0.8rem 0;
+        .active {
+            border: none;
+        }
+
+        nav {
+            font-size: 1.5em;
+            padding: 15px 0 15px 0;
+        }
+
+        nav a {
+            margin: 0.8rem 0 0.8rem 0;
+            padding: 0 5px 0 5px;
+
+        }
+
+        footer .navbar-styled a {
+            margin: 0.5em 1.5em 0.2em 1.5em;
+            text-decoration: none;
+            font-size: 0.5em;
+        }
+
+        button #dropdownMenu1 {
+            min-width: 1000px;
+            justify-content: center;
+        }
+
+        button#dropdownMenu1.btn.btn-styled {
+            color: black;
+            min-width: 80vw;
+            margin: 0.8rem 0 0.8rem 0;
 
 
+        }
+
+        .splashH1 {
+            padding: 0.1em;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .specialH1 {
+            font-weight: bold;
+            color: white;
+            font-size: 1.5em;
+            font-family: Fira Sans, cursive;
+            padding: 0.2em 0.4em;
+            margin: 0.1em 0 0.1em 0;
+            background-color: #36A6BF;
+            width: 100%;
+        }
+
+        article {
+            padding: 1em;
+        }
+
+        .card-header {
+            -moz-box-shadow: inset 0 0 1px #000000;
+            -webkit-box-shadow: inset 0 0 1px #000000;
+            box-shadow: inset 0 0 1px #000000;
+        }
+
+        button {
+            background-color: white !important;
+            -moz-box-shadow: inset 0 0 2px #000000;
+            -webkit-box-shadow: inset 0 0 2px #000000;
+            box-shadow: inset 0 0 2px #000000;
+        }
+
+        .list-group {
+            padding: 1em;
+        }
+
+        form {
+            padding: 2em;
+        }
+
+        .submitStyles {
+            padding: 2em;
+        }
+
     }
 
-    .splashH1 {
-        padding:0.1em;
-        text-align: center;
-        font-size:2em;
-    }
-
-    .specialH1 {
-        font-weight:bold;
-        color:white;
-        font-size:1.5em;
-        font-family: Fira Sans, cursive;
-        padding:0.2em 0.4em;
-        margin:0.1em 0 0.1em 0;
-        background-color: #36A6BF;
-        width:100%;
-    }
-
-    article {
-        padding:1em;
-    }
-    .card-header {
-        -moz-box-shadow:    inset 0 0 1px #000000;
-        -webkit-box-shadow: inset 0 0 1px #000000;
-        box-shadow:         inset 0 0 1px #000000;
-    }
-    button {
-        background-color:white !important;
-        -moz-box-shadow:    inset 0 0 2px #000000;
-        -webkit-box-shadow: inset 0 0 2px #000000;
-        box-shadow:         inset 0 0 2px #000000;
-    }
-
-    .list-group {
-        padding:1em;
-    }
-
-    form {
-        padding:2em;
-    }
-
-    .submitStyles
-    {
-        padding:2em;
-    }
-
-}
 
